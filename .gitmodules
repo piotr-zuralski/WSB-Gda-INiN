@@ -1,3 +1,8 @@
 [submodule "INiN4_PR1.1-Zaawansowane-technologie-internetowe"]
 	path = INiN4_PR1.1-Zaawansowane-technologie-internetowe
 	url = git@github.com:piotr-zuralski/WSB-Gda-INiN4_PR1.1-ZTI-flutter_app.git
+
+[submodule "INiN5_PR1.1-Programowanie-w-jezyku-PHP/Project"]
+	path = INiN5_PR1.1-Programowanie-w-jezyku-PHP/Project
+	url = git@github.com:piotr-zuralski/WSB-Gda-INiN5_PR1.1-PHP.git
+
