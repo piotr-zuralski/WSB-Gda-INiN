@@ -67,6 +67,7 @@ jobs:
               pull_number: pr.number,
               repo: repo.repo
             })
+
   pr-automation:
     runs-on: ubuntu-latest
     steps:
