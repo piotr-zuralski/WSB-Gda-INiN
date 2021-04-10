@@ -10,4 +10,4 @@ class Holiday:
         self.weather = WeatherManager.get_weather_for_date(self.date)
     
     def __repr__(self):
-        return f"{self.local_name} ({self.weather}) ({self.date.year})"
+        return f"{self.local_name} ({self.weather}) ({self.date.year})\n"
