@@ -12,7 +12,16 @@ Przykładowe wyjście:
 -3 5
 """
 
-liczby = input('Podaj liczby, rozdzielając je spacjami: ').split(' ')
+
+def podaj_liczby():
+    return input('Podaj liczby, rozdzielając je spacjami: ').split(' ')
+
+
+liczby = podaj_liczby()
+while not len(liczby) >= 2:
+    print("Podaj przynajmniej dwie liczby")
+    liczby = podaj_liczby()
+
 liczby = list(filter(lambda x: int(float(x)) or x.isdigit(), liczby))
 min = min(liczby)
 max = max(liczby)
