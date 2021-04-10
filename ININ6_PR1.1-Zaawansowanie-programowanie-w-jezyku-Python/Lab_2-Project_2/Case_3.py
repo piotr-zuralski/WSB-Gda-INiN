@@ -30,7 +30,7 @@ def podaj_liczby():
 
 liczby = podaj_liczby()
 while not len(liczby) >= 2:
-    print("Podaj przynajmniej dwie liczby")
+    print('Podaj przynajmniej dwie liczby')
     liczby = podaj_liczby()
 
 for i in liczby:

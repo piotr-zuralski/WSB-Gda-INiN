@@ -22,7 +22,7 @@ def podaj_cyfry():
 
 cyfry = podaj_cyfry()
 while not len(cyfry) == 10:
-    print("Nieprawidłowa ilość cyfr")
+    print('Nieprawidłowa ilość cyfr')
     cyfry = podaj_cyfry()
 
 cyfry = ''.join(cyfry)
