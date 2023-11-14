@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add assignee and request reviewer
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -56,7 +56,7 @@ jobs:
             } catch (e) { }
 
       - name: dependabot - Add review
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         if: (github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]')
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -72,7 +72,7 @@ jobs:
             });
             
       - name: owner - Add review and merge PR
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         if: (github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]')
         with:
           github-token: ${{ secrets.AUTOMERGE_GITHUB_TOKEN }}
